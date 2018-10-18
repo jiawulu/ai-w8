@@ -8,11 +8,11 @@ echo current dir is $PWD
 # 设置目录，避免module找不到的问题
 export PYTHONPATH=$PYTHONPATH:$DIR:$DIR/slim:$DIR/object_detection
 
-ls /data/w8-data-wuzhong
+ls /data/weixin-42679665/w8-data-wuzhong
 
 # 定义各目录
 output_dir=/output  # 训练目录
-dataset_dir=/data/w8-data-wuzhong # 数据集目录，这里是写死的，记得修改
+dataset_dir=/data/weixin-42679665/w8-data-wuzhong # 数据集目录，这里是写死的，记得修改
 
 train_dir=$output_dir/train
 checkpoint_dir=$train_dir
