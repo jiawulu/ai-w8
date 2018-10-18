@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # 查找脚本所在路径，并进入
 #DIR="$( cd "$( dirname "$0"  )" && pwd  )"
 DIR=$PWD
