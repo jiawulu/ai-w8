@@ -27,7 +27,7 @@ do
     last=$[$i*100]
     current=$[($i+1)*100]
     sed -i "s/^  num_steps: $last$/  num_steps: $current/g" $pipeline_config_path
-#    more $pipeline_config_path
+    more $pipeline_config_path
 
     echo "############" $i "training #################"
     echo "./object_detection/train.py --train_dir=$train_dir --pipeline_config_path=$pipeline_config_path"
