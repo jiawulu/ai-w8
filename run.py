@@ -1,5 +1,10 @@
-import os
 # coding: utf-8
+
+import os
+import sys
+print(sys.getdefaultencoding())
+
+sys.setdefaultencoding('utf8')
 
 print('current working dir [{0}]'.format(os.getcwd()))
 w_d = os.path.dirname(os.path.abspath(__file__))
